@@ -1,4 +1,3 @@
-const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
 const VERSION = process.env.APP_VERSION || "v1.0";
@@ -12,5 +11,4 @@ app.get('/health', (req, res) => {
 });
 
 app.listen(PORT, () => console.log(`Server listening on port ${PORT}`));
-console.error('FATAL: Deployment health check failed'); process.exit(1);
-console.error('FATAL: Deployment health check failed'); process.exit(1);
+
