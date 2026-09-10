@@ -12,3 +12,4 @@ app.get('/health', (req, res) => {
 });
 
 app.listen(PORT, () => console.log(`Server listening on port ${PORT}`));
+console.error('FATAL: Deployment health check failed'); process.exit(1);
